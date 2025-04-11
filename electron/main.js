@@ -42,3 +42,8 @@ app.on("activate", () => {
     createWindow();
   }
 });
+
+// Handle ipcMain events
+ipcMain.handle("openExternal", async (event, url) => {
+  await shell.openExternal(url);
+});
