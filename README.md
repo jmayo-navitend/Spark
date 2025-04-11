@@ -21,13 +21,13 @@ A starting point for Electron apps ⚡️
 
 ### Recommended
 
-- [nvm](https://github.com/nvm-sh/nvm) <span style='font-size:8px;'>&#8628;</span>
+- [nvm](https://github.com/nvm-sh/nvm) &#8628;
 
 ```bash
 nvm install 22
 ```
 
-&emsp; &emsp; <span style='font-size:10px;'>&#8595;</span>
+&emsp; &emsp; &#8595;
 
 - Node.js Version 22.14.0 (or newer)
 - npm Version 10.9.2 (or newer)
