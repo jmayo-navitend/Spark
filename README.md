@@ -38,8 +38,24 @@ nvm install 22
 
 1. Clone the repository
 
+1. Clone the repository
+
+HTTPS
+
 ```bash
-git clone
+git clone https://github.com/jmayo-navitend/spark.git
+```
+
+SSH
+
+```bash
+git clone git@github.com:jmayo-navitend/Spark.git
+```
+
+GitHub CLI
+
+```bash
+gh repo clone jmayo-navitend/spark
 ```
 
 2. Enter the repositories directory
