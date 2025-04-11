@@ -263,7 +263,6 @@ console.log("✅ Preload script loaded");
 ```json
 ...
 "main": "electron/main.js",
-"scripts": {
 ...
 ```
 
