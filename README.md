@@ -9,7 +9,12 @@ A starting point for Electron apps ⚡️
 
 ---
 
-## 🛫 Setup
+## 🔍 &nbsp; Preview
+
+![Preview of Spark's default page](./assets/Default%20Page.png)
+
+---
+
 ## 🛫 &nbsp; Setup
 
 ### Requirements
