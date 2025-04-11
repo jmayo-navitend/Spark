@@ -2,14 +2,20 @@
 
 A starting point for Electron apps ⚡️
 
-## 📋 Overview
+## 📋 &nbsp; Overview
 
 - Built with [Vite](https://vite.dev)
 - [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/) are built in
 
 ---
 
-## 🛫 Setup
+## 🔍 &nbsp; Preview
+
+![Preview of Spark's default page](./assets/Default%20Page.png)
+
+---
+
+## 🛫 &nbsp; Setup
 
 ### Requirements
 
@@ -92,7 +98,7 @@ npm run electron
 
 ---
 
-## 📦 Building
+## 📦 &nbsp; Building
 
 1. Enter the repositories directory
 
@@ -110,7 +116,7 @@ npm run make
 
 ---
 
-## 🛠️ Creating from Scratch
+## 🛠️ &nbsp; Creating from Scratch
 
 1. Create a Vite project with the React TypeScript template
 
