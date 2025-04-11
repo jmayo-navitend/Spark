@@ -12,11 +12,7 @@ function App() {
     <div className="text-stone-800 dark:text-stone-200 ">
       <div className="flex justify-center gap-4">
         <a href="https://vite.dev">
-          <img
-            src={viteLogo}
-            className="logo vite animate-pulse"
-            alt="Vite logo"
-          />
+          <img src={viteLogo} className="logo vite" alt="Vite logo" />
         </a>
         <a href="https://react.dev">
           <img
@@ -28,14 +24,14 @@ function App() {
         <a href="https://www.electronjs.org/">
           <img
             src={electronLogo}
-            className="logo electron animate-bounce"
+            className="logo electron scale-115"
             alt="Electron logo"
           />
         </a>
         <a href="https://tailwindcss.com/">
           <img
             src={tailwindcssLogo}
-            className="logo tailwindcss animate-[ping_2s_ease-in-out_infinite] scale-80"
+            className="logo tailwindcss scale-85"
             alt="Tailwind CSS logo"
           />
         </a>
