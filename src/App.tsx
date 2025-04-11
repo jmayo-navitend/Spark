@@ -51,7 +51,8 @@ function App() {
         </p>
 
         <p className="text-stone-500">
-          Click on the Vite, React, Electron, and Tailwind CSS logos to learn more
+          Click on the Vite, React, Electron, and Tailwind CSS logos to learn
+          more
         </p>
       </div>
     </div>
