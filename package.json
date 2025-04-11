@@ -18,7 +18,7 @@
     "forge": {
       "packagerConfig": {
         "name": "Spark",
-        "icon": ""
+        "icon": "assets/icon.icns"
       },
       "makers": [
         {
