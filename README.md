@@ -44,8 +44,6 @@ nvm install 22
 
 1. Clone the repository
 
-1. Clone the repository
-
 HTTPS
 
 ```bash
