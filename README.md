@@ -50,18 +50,6 @@ HTTPS
 git clone https://github.com/jmayo-navitend/spark.git
 ```
 
-SSH
-
-```bash
-git clone git@github.com:jmayo-navitend/Spark.git
-```
-
-GitHub CLI
-
-```bash
-gh repo clone jmayo-navitend/spark
-```
-
 2. Enter the repositories directory
 
 ```bash
@@ -266,4 +254,4 @@ console.log("✅ Preload script loaded");
 
 14. Add the `out` folder to `.gitignore`
 
-15. Go to the [Setup](#setup) section and **start at step four**
+15. Go to the [Setup](#Setup) section and **start at step four**
