@@ -254,4 +254,4 @@ console.log("✅ Preload script loaded");
 
 14. Add the `out` folder to `.gitignore`
 
-15. Go to the [Setup](#Setup) section and **start at step four**
+15. Go to the [Setup](#setup) section and **start at step four**
