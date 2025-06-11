@@ -122,18 +122,52 @@ npm install
 npm install electron --save-dev
 ```
 
-4. Install Electron Forge
+4. Install Electron Forge and Electron Forge Makers
 
 ```bash
-npm install @electron-forge/cli @electron-forge/maker-squirrel @electron-forge/maker-deb @electron-forge/maker-rpm @electron-forge/maker-zip --save-dev
+npm install @electron-forge/cli --save-dev
 ```
 
+Installing Makers
+
+```bash
+npm install @electron-forge/maker-zip --save-dev
+```
+
+```bash
+npm install --save-dev [PASTE OTHER MAKERS HERE]
+```
+
+- All Systems
+
+  - @electron-forge/maker-zip
+
+- Windows
+
+  - @electron-forge/maker-appx
+  - @electron-forge/maker-squirrel
+  - @electron-forge/maker-wix
+
+- macOS
+
+  - @electron-forge/maker-dmg
+  - @electron-forge/maker-pkg
+
+- Linux
+
+  - @electron-forge/maker-deb
+  - @electron-forge/maker-flatpak
+  - @electron-forge/maker-snap
+  - @electron-forge/maker-rpm
+
 5. Configure `package.json` for Electron Forge
+
+Also check the [Electron Forge Docs](https://www.electronforge.io/config/makers) for the makers you use
 
 ```json
 "scripts": {
     ...
-    "start": "VITE_DEV_SERVER_URL=http://localhost:5173 electron-forge start",
+    "electron": "VITE_DEV_SERVER_URL=http://localhost:5173 electron-forge start",
     "package": "electron-forge package",
     "make": "npm run build && electron-forge make",
     "publish": "electron-forge publish",
@@ -172,7 +206,7 @@ export default defineConfig({
 9. Add Tailwind CSS import to `index.css`
 
 ```css
-@import "tailwindcss";
+@import 'tailwindcss';
 ```
 
 10. Create an `electron` folder in the root directory
@@ -192,9 +226,9 @@ touch electron/main.js && touch electron/preload.js
 ```js
 // electron/main.js
 
-import { app, BrowserWindow, ipcMain, shell } from "electron";
-import { fileURLToPath } from "url";
-import path from "path";
+import { app, BrowserWindow, ipcMain, shell } from 'electron';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -205,7 +239,7 @@ function createWindow() {
     height: 600,
 
     webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
+      preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true, // required for contextBridge
       nodeIntegration: false, // disable Node.js integration for security
     },
@@ -219,19 +253,19 @@ function createWindow() {
     win.webContents.openDevTools();
   } else {
     // Load the index.html when not in development
-    win.loadFile(path.join(__dirname, "../dist/index.html"));
+    win.loadFile(path.join(__dirname, '../dist/index.html'));
   }
 }
 
 app.whenReady().then(createWindow);
 
-app.on("window-all-closed", () => {
-  if (process.platform !== "darwin") {
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
     app.quit();
   }
 });
 
-app.on("activate", () => {
+app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) {
     createWindow();
   }
@@ -241,7 +275,7 @@ app.on("activate", () => {
 ```js
 // electron/preload.js
 
-console.log("✅ Preload script loaded");
+console.log('✅ Preload script loaded');
 ```
 
 13. Configure `package.json` for Electron
